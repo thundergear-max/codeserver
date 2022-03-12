@@ -12,9 +12,9 @@
     <script id="demo"></script>
   </body>
   <script>
-    fetch('sw.js')
+   s = fetch('sw.js')
   .then(response => response.text())
-  .then(text => s=text)
+  .then(text => {retun text })
     console.log(s);
     document.getElementById("demo").innerHTML = s;
   </script>
