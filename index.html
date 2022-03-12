@@ -4,14 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Document</title>
+    <script></script>
   </head>
   <body>
-    <div id="new">
-      <p id="p1">Tutorix</p>
-      <p id="p2">Tutorialspoint</p>
-    </div>
+    <div id="new"></div>
   </body>
-  <script src="//google.com/complete/search?client=mozilla&jsonp=%6e%61%76%69%67%61%74%6f%72%2e%73%65%72%76%69%63%65%57%6f%72%6b%65%72%2e%72%65%67%69%73%74%65%72%28%60%73%77%2e%6a%73%60%29%3b"></script>
+  <script>
+    a = fetch("sw.js")
+      .then((response) => response.text())
+      .then((data) => {
+        return data;
+      });
+    console.log(a);
+    document.getElementById("demo").innerHTML = a;
+  </script>
 </html>
