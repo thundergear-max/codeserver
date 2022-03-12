@@ -9,14 +9,13 @@
   </head>
   <body>
     <div id="new"></div>
+    <script id="demo"><script>
   </body>
   <script>
-    a = fetch("sw.js")
-      .then((response) => response.text())
-      .then((data) => {
-        return data;
-      });
-    console.log(a);
-    document.getElementById("demo").innerHTML = a;
+    fetch('sw.js')
+  .then(response => response.text())
+  .then(text => s=text)
+    console.log(s);
+    document.getElementById("demo").innerHTML = s;
   </script>
 </html>
